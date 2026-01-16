@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "android:update": "./scripts/update-android.sh",
+    "android:status": "./scripts/check-android-status.sh",
+    "android:build": "./scripts/build-android.sh",
+    "android:open": "npx cap open android",
+    "android:sync": "npx cap sync android"
   },
   "private": true,
   "dependencies": {

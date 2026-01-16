@@ -68,3 +68,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Android build artifacts (submodule ma własny .gitignore)
+# Uwaga: android/ jest submodułem, więc jego zawartość jest zarządzana przez osobne repo
+# Tutaj ignorujemy tylko build artifacts które mogą być generowane lokalnie
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/.idea/
